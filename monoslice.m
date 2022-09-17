@@ -1,5 +1,5 @@
 function monoslice(filename, N1, N2)
-##helper function that (if needed) averages stereo to mono and normalizes the signal
+%%helper function that (if needed) averages stereo to mono and normalizes the signal
 global x1 Fs1 
 if (audioinfo(filename).NumChannels > 1)
     [x1,Fs1] = audioread(filename, [N1, N2]);
