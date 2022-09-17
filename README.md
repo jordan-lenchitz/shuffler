@@ -11,7 +11,7 @@ block_size = length in samples of your desired sound slices, e. g. 44100 for 1-s
 
 output [optional] = output name in your current directory, e.g. 'my_sound_shuffled.wav'
 
-Relies on helper function, monoslice.m
+Relies on a helper function, monoslice.m
 
 Example: Slice 44100 Hz sample rate 'my_sound.wav' into 1-second slices and then listen to the result when they are randomly glued back together.
 
