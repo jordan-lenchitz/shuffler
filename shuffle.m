@@ -1,12 +1,12 @@
-function shuffle(sound, block_size, output)
+function shuffle(filename, block_size, output)
 if nargin == 2
     check = 0;
 else
     check = 1;
 end
 global x1
-nSamples = audioinfo(sound).TotalSamples;
-Fs = audioinfo(sound).SampleRate;
+nSamples = audioinfo(filename).TotalSamples;
+Fs = audioinfo(filename).SampleRate;
 curSample = 1; q=1;
 while (curSample <= nSamples)
     N1 = curSample;
@@ -14,7 +14,7 @@ while (curSample <= nSamples)
     if (N2 > nSamples)
         N2 = nSamples;
     end
-    monoslice(sound, N1, N2)
+    monoslice(filename, N1, N2)
     try
         j(q,:) = x1;
     catch
