@@ -5,7 +5,7 @@ Built in MATLAB R2020a; tested up through R2022a.
 
 Syntax: shuffle(filename, block_size, output)
 
-filename = audio file in your current directory, e. g. 'my_sound.wav'
+filename = audio file in your current directory, e. g. 'my_sound.wav'; any format supported by MATLAB should work
 
 block_size = length in samples of your desired sound slices, e. g. 44100 for 1-second slices for audio with a 44100 Hz sample rate
 
