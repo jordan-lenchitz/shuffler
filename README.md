@@ -1,7 +1,7 @@
 # shuffler
 Slice a sound into pieces and randomly glue them back together. For whenever you are feeling low on entropy! 
 
-Built in MATLAB R2020a; tested up through R2022a.
+Built in MATLAB R2020a; tested up through R2026a on apple silicon.
 
 Syntax: shuffle(filename, block_size, output)
 
